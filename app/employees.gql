@@ -1,0 +1,14 @@
+query Employees {
+  allEmployees {
+    id
+    fullName
+    profilePicture {
+      alt
+      responsiveImage(
+        imgixParams: { fit: crop, w: 320, h: 320, auto: format }
+      ) {
+        ...ResponsiveImageFragment
+      }
+    }
+  }
+}

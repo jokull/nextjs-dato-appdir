@@ -1,0 +1,4 @@
+{
+  "schema": "dato.graphql",
+  "documents": "app/**/*.gql"
+}

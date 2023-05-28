@@ -6,20 +6,38 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "codegen": "graphql-codegen && prettier -w dato.ts"
   },
   "dependencies": {
-    "@types/node": "20.2.5",
-    "@types/react": "18.2.7",
-    "@types/react-dom": "18.2.4",
+    "@t3-oss/env-nextjs": "^0.3.1",
     "autoprefixer": "10.4.14",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
+    "framer-motion": "^10.12.16",
+    "graphql": "^16.6.0",
     "next": "13.4.4",
     "postcss": "8.4.24",
     "react": "18.2.0",
+    "react-datocms": "^4.0.15",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^4.0.0",
+    "@graphql-codegen/schema-ast": "^4.0.0",
+    "@graphql-codegen/typescript": "^4.0.0",
+    "@graphql-codegen/typescript-generic-sdk": "^3.1.0",
+    "@graphql-codegen/typescript-operations": "^4.0.0",
+    "@types/eslint": "^8.40.0",
+    "@types/node": "20.2.5",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
+    "dotenv": "^16.0.3",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "prettier": "^2.8.8"
   }
 }

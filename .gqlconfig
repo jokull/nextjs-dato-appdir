@@ -1,0 +1,18 @@
+{
+  "schema": {
+    "files": "packages/cms/dato.graphql"
+  },
+  "query": {
+    "files": [
+      /* define file paths which you'd like the gql parser to watch and give autocomplete suggestions for */
+      {
+        "match": ["app/**/*.ts", "app/**/*.tsx"], // match multiple extensions
+        "parser": ["EmbeddedQueryParser", { "startTag": "gql`", "endTag": "`" }] // parse any query inside gql template literal
+      },
+      {
+        "match": "app/**/*.gql",
+        "parser": "QueryParser"
+      }
+    ]
+  }
+}
